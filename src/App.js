@@ -1,7 +1,7 @@
 import About from "./components/About";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import Portfolio from "./components/Portfolio";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
     <Navbar /> 
     <Home /> 
     <About /> 
-    <Portfolio />
+    <Projects />
     </div>
   );
 } 
