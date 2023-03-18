@@ -2,17 +2,18 @@ import React from 'react'
 import bringPopcorn from '../assets/bringPopcorn.png'
 import getFit from '../assets/getFit.png'
 
-const Portfolio = () => {
+
+const Projects = () => {
   return (
     <div name='projects' className='w-full m:h-screen text-gray-300 bg-[#0a192f]'>
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div className='max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full justify-center'>
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border border-b-4 text-gray-300 border-pink-600'>Work</p>
                 <p py-6>Check out some of my recent projects</p>
             </div>
 
             {/* container */}
-            <div className='gird sm:grid-cols-2 md:grid-cols-3 gap-4'>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
 
             {/* grid item */ }
                 <div className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div' style={{ backgroundImage: `url(${bringPopcorn})` }}>
@@ -40,4 +41,4 @@ const Portfolio = () => {
   )
 }
 
-export default Portfolio
+export default Projects
