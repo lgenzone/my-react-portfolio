@@ -21,6 +21,11 @@ nav {
     z-index: 999;
 }
 
+.accent-color {
+    border-color: #8884ff;
+    color:#8884ff;
+}
+
 
 .content-div {
     background-repeat: no-repeat;
