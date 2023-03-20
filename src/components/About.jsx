@@ -1,5 +1,5 @@
 import React from 'react'
-import Avatar from '../assets/IMG_1778.png'
+
 
 const colors = {
     "Background": "#020100",
