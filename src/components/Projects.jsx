@@ -1,6 +1,6 @@
 import React from 'react'
 import bringPopcorn from '../assets/bringPopcorn.png'
-import getFit from '../assets/SchedulePagePic.png'
+import getFit from '../assets/getFit.png'
 import Placeholder from '../assets/placeholder_image.png'
 
 const colors = {
@@ -81,6 +81,7 @@ const Projects = () => {
           <span className="text-2xl font-bold flex justify-center items-center text-white tracking-wider h-full">
             Project #3
           </span>
+          <p><i>Coming Soon</i></p>
           <div className="pt-8 text-center">
             <a href="/">
               <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
@@ -103,4 +104,4 @@ const Projects = () => {
   );
 }
 
-export default Projects
+export default Projects;

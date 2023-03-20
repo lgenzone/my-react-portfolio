@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Link } from 'react-scroll'
+import { Link, animateScroll as scroll } from 'react-scroll'
 
 const colors = {
   "Background": "#020100",
@@ -17,22 +17,22 @@ const Navbar = () => {
       { /* menu */ }
         <ul className='hidden md:flex'>
           <li>
-            <Link to='home' smooth={true} duration={500} >
+            <Link activeClass='text-[#8884ff]' to='home' spy={true} smooth={true} duration={500} >
             Home
             </Link>
           </li>
           <li>
-            <Link to='about' smooth={true} duration={500} >
+            <Link activeClass='text-[#8884ff]' to='about' spy={true} smooth={true} duration={500} >
             About
             </Link>
           </li>
           <li>
-            <Link to='projects' smooth={true} duration={500} >
+            <Link activeClass='text-[#8884ff]' to='projects' spy={true} smooth={true} duration={500} >
             Projects
             </Link>
           </li>
           <li>
-            <Link to='contact' smooth={true} duration={500} >
+            <Link activeClass='text-[#8884ff]' to='contact' spy={true} smooth={true} duration={500} >
             Contact
             </Link>
           </li>
