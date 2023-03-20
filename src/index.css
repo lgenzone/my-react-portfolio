@@ -42,3 +42,9 @@ nav {
         hsla(242, 74%, 61%, 0.8)   
     )!important;
 }
+
+input[type="text"],
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
