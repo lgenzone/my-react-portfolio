@@ -38,20 +38,24 @@ const About = () => {
               className="sm:text-right text-4xl font-bold"
               style={{ color: colors.Text }}
             >
-              <p>Hi, I'm Lauren Genzone. Say something about yourself here.</p>
+              <p>👋 Hi, I'm Lauren.</p>
+              <p>It's nice to meet you!</p>
             </div>
             <div>
               <p style={{ color: colors.Text }}>
-                {" "}
-                Talk about yourself as a coder and what you're passionate about.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+                With a passion for web development and a keen eye for detail,
+                I'm dedicated to creating intuitive, functional, and visually
+                appealing applications!
+                <br />
+                When I'm not coding, you can find me carving some fresh powder!
+                🏂 <br /> or dancing to some funky tunes! 🪩 <br />
+                I'm always looking for new challenges and opportunities to
+                expand my horizons, and I'm eager to see where my journey as a
+                developer takes me next!
               </p>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
     );
   };

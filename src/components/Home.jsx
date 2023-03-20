@@ -27,8 +27,8 @@ const Home = () => {
         <div className='md:w-1/2 md:pl-10 flex flex-col justify-center'>
           <p className='font-bold' style={{color:colors.Accent}}>Hello! My name is</p>
           <h1 className='text-4xl font-bold' style={{color:colors.Text}}>Lauren Genzone</h1>
-          <h2 className='text-4xl font-bold' style={{color:colors.Accent}}>I'm a Full Stack Developer.</h2>
-          <p className='text-[#8892b0] py-4 max-w-[700px]'>Welcome to my portfolio! Please take a look around!</p>
+          <h2 className='text-4xl font-bold' style={{color:colors.Accent}}>I'm a Full-Stack Web Developer.</h2>
+          <p className='text-white'>I'm a junior developer based in sunny San Diego, California. Originally from Denver, Colorado, I have a Bachelor of Science degree from Metropolitan State University of Denver and I'm currently completing a coding bootcamp at the University of Denver, set to finish in Spring 2023.</p>
           <div>
             <button onClick={handleViewWorkClick} className='text-white border-2 px-6 py-3 my-2 flex items-center rounded-lg hover:bg-[#8884ff] hover:border-[#8884ff]'>View Work<HiArrowNarrowRight className='ml-3' /></button>
             {showProjects && <Projects />}
