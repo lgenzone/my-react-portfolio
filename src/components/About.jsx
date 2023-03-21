@@ -26,7 +26,7 @@ const About = () => {
                 className="text-4xl font-bold inline"
                 style={{
                   color: colors.Text,
-                  borderBottom: `4px solid ${colors.Accent}`,
+                  borderBottom: `4px solid ${colors.Accent}`
                 }}
               >
                 About Me
@@ -46,9 +46,9 @@ const About = () => {
                 With a passion for web development and a keen eye for detail,
                 I'm dedicated to creating intuitive, functional, and visually
                 appealing applications!
-                <br />
-                When I'm not coding, you can find me carving some fresh powder!
-                🏂 <br /> or dancing to some funky tunes! 🪩 <br />
+                
+                When I'm not coding, you can find me carving some fresh powder
+                🏂  or dancing to some funky tunes! 🪩 
                 I'm always looking for new challenges and opportunities to
                 expand my horizons, and I'm eager to see where my journey as a
                 developer takes me next!
