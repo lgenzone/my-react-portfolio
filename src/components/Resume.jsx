@@ -8,6 +8,7 @@ import mysqlLogo from '../assets/mysqlicon.png'
 import nodeLogo from '../assets/nodelogo.png'
 import reactLogo from '../assets/reactlogoWhite.png'
 import githubLogo from '../assets/GithubLogowhite.png'
+import myResume from '../assets/resume-template.pdf' 
 
 
 const colors = {
@@ -18,12 +19,12 @@ const colors = {
   
 const Resume = () => {
   return (
-    <div name='resume' style={{backgroundColor: colors.Background}}>
+    <div name='resume' className='flex items-center justify-center h-screen' style={{backgroundColor: colors.Background}}>
     { /* container */ }
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
-            <div>
-                <p className='text-4xl font-bold inline' style={{ color: colors.Text, borderBottom: `4px solid ${colors.Accent}`}}>Skills</p>
-                <p className='py-4' style={{ color: colors.Text }}>Technologies I have worked with:</p>
+            <div className='flex items-center justify-center py-10'>
+                <p className='text-2xl font-bold inline' style={{ color: colors.Text, borderBottom: `4px solid ${colors.Accent}`}}>Technologies I've worked with</p>
+                
             </div>
             { /* grid */ }
             <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
@@ -68,6 +69,10 @@ const Resume = () => {
                     <p className='my-4' style={{ color: colors.Text }}>GitHub</p>
                 </div>
             </div>
+            <div className='flex items-center justify-center pt-8'>
+                <a className="text-2xl font-bold link link-hover" style={{ color: colors.Accent}} href={myResume}>Download my Resume</a>
+            </div>
+            
         </div>
     </div>
     
