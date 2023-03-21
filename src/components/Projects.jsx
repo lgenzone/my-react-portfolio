@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="w-full m:h-screen"
+      className="flex items-center justify-center h-screen m:h-screen"
       style={{
         backgroundColor: colors.Background,
         color: colors.Text,

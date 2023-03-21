@@ -12,6 +12,7 @@ const About = () => {
     return (
       <div
         name="about"
+        
         className="w-full h-screen"
         style={{
           backgroundColor: colors.Background,
