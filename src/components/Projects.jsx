@@ -1,3 +1,4 @@
+
 import React from 'react'
 import bringPopcorn from '../assets/bringPopcorn.png'
 import getFit from '../assets/getFit.png'
@@ -17,7 +18,7 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="flex items-center justify-center h-screen m:h-screen"
+      className="flex items-center justify-center min-h-screen"
       style={{
         backgroundColor: colors.Background,
         color: colors.Text,
@@ -25,7 +26,7 @@ const Projects = () => {
         textAlign: "center",
       }}
     >
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col w-full h-full justify-center items-center">
+      <div className="max-w-full mx-auto p-4 flex flex-col w-full h-full justify-center items-center">
         <div className="pb-8">
           <p
             className="text-4xl font-bold inline"
@@ -39,10 +40,10 @@ const Projects = () => {
         </div>
 
         {/* container */}
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* grid item */}
           <div
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${bringPopcorn})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
@@ -66,7 +67,7 @@ const Projects = () => {
 
           {/* grid item */}
           <div
-            className="group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${getFit})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
@@ -89,7 +90,7 @@ const Projects = () => {
           </div>
           {/* grid item */}
           <div
-            className="group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${Placeholder})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
@@ -115,7 +116,7 @@ const Projects = () => {
           </div>
           {/* grid item */}
           <div
-            className="group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${codeQuiz})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
@@ -138,7 +139,7 @@ const Projects = () => {
           </div>
           {/* grid item */}
           <div
-            className="group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${readmeGenerator})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
@@ -161,7 +162,7 @@ const Projects = () => {
           </div>
           {/* grid item */}
           <div
-            className="group container rounded-md flex justify-center items-center mx-auto content-div"
+            className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${teamProfileGen})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
