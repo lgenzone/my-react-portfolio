@@ -35,7 +35,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='w-full h-screen flex justify-center items-center p-4' style={{backgroundColor: colors.Background, margin: 'auto'}}>
+    <div name='contact' className='w-full h-screen flex justify-center items-center p-4' style={{backgroundColor: colors.Background, margin: 'auto'}}>
       <form onSubmit={handleSubmit} className='flex flex-col max-w-[600px] w-full'>
         <div className='pb-8'>
           <p className='text-4xl font-bold inline' style={{color: colors.Text, borderBottom: `4px solid ${colors.Accent}`}}>Contact</p>

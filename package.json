@@ -12,6 +12,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-icons": "^4.3.1",
+    "react-router": "^6.9.0",
     "react-scripts": "5.0.0",
     "react-scroll": "^1.8.9",
     "tailwindcss": "^3.1.6",

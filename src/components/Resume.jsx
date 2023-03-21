@@ -18,7 +18,7 @@ const colors = {
   
 const Resume = () => {
   return (
-    <div name='skills' style={{backgroundColor: colors.Background}}>
+    <div name='resume' style={{backgroundColor: colors.Background}}>
     { /* container */ }
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div>
