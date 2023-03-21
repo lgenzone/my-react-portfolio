@@ -12,15 +12,7 @@ const colors = {
 };
 
 const Home = () => {
-  const [showProjects, setShowProjects] = useState(false)
-  const handleViewWorkClick = () => {
-    setShowProjects(true);
-  }
-
-  const [showAbout, setShowAbout] = useState(false);
-  const handleAboutClick = () => {
-    setShowAbout(true);
-  };
+ 
   
  
   return (
