@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 const colors = {
   "Background": "#020100",
@@ -18,21 +19,31 @@ const Contact = () => {
     return re.test(String(email).toLowerCase());
   }
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_n3ifsm4', 'template_w9lrk67', e.target, 'XNvdVrsHDRqb4lSdu')
+    .then((result) => {
+      console.log(result.text);
+      alert('Thank you for contacting me. I will get back to you as soon as possible!');
+    }, (error) => {
+      console.log(error.text);
+    });
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setNameError(!name);
     setEmailError(!validateEmail(email));
-
+  
     if (name && validateEmail(email)) {
-      console.log('Name:', name);
-      console.log('Email:', email);
-      console.log('Message:', message);
+      sendEmail(e);
       setName('');
       setEmail('');
       setMessage('');
-      alert ('Thank you for contacting me! I will get back to you as soon as possible! :)');
     }
   }
+  
 
   return (
     <div name='contact' className='w-full h-screen flex justify-center items-center p-4' style={{backgroundColor: colors.Background, margin: 'auto'}}>
