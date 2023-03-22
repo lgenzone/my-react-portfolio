@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 
-import { HiArrowNarrowRight } from 'react-icons/hi'
-import Avatar from '../assets/lauren-circle.png'
 
-import Projects from './Projects'
+import Avatar from '../assets/lauren-circle.png'
 
 const colors = {
   "Background": "#020100",
@@ -23,10 +21,10 @@ const Home = () => {
     >
       {/* container */}
       <div
-        className="hero min-h-screen bg-base-200"
+        className="flex justify-center items-center min-h-screen bg-base-200"
         style={{ backgroundColor: colors.Background }}
       >
-        <div className="hero-content flex-col lg:flex-row">
+        <div className="flex-col lg:flex-row">
           <img src={Avatar} className="max-w-sm rounded-lg shadow-2xl" />
           <div>
             <p className="font-bold" style={{ color: colors.Text }}>
@@ -41,7 +39,7 @@ const Home = () => {
             <div className='pt-6'>
 
             <button
-            className="text-white border-2 px-6 py-3 my-2 flex items-center rounded-lg hover:bg-[#8884ff] hover:border-[#8884ff]">
+            className="text-white border-2 px-6 py-3 my-2 flex justify-between items-center rounded-lg hover:bg-[#8884ff] hover:border-[#8884ff]">
           <a href='/about'>About Me</a>
             </button>
           
