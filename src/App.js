@@ -29,11 +29,7 @@ function App() {
          />
          
       </Routes>
-      {/* <Home /> 
-      <About />  
-      <Resume />
-      <Projects />
-      <Contact />  */}
+     
       <Footer />
     </div>
   );

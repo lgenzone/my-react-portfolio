@@ -20,8 +20,9 @@
 nav {
     top: 0;
     left: 0;
-    z-index: 999;
 }
+
+  
 
 .accent-color {
     border-color: #8884ff;

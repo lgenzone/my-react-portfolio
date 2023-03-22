@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div
-      className="fixed w-full h-[80px] flex justify-center  items-center px-4 text-gray-300 nav"
+      className="fixed w-full h-[80px] flex justify-center items-center px-4 nav"
       style={{ backgroundColor: colors.Background }}
     >
       {/* menu */}
@@ -38,14 +38,14 @@ const Navbar = () => {
       </ul>
 
       {/* hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10 absolute top-0 right-0 mt-4 mr-4">
+      <div onClick={handleClick} className="md:hidden z-40 fixed top-0 right-0 mt-4 mr-4">
           {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
 
       {/* mobile */}
       <ul
-        className={`absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center ${!nav ? "hidden" : ""}`} style={{backgroundColor: colors.Background}}>
+        className={`fixed top-0 left-0 w-full h-screen flex flex-col justify-center items-center ${!nav ? "hidden" : ""}`} style={{backgroundColor: colors.Background, zIndex: "20"}}>
         <li className="py-6 text-4xl">
           <a href='/' style={{ color: location.pathname === '/' ? colors.Accent : colors.Text }}>Home</a>
         </li>
