@@ -9,8 +9,8 @@ const colors = {
 const About = () => {
   return (
     <div>
-      <div className="hero min-h-screen bg-base-200" style={{ backgroundColor: colors.Background }}>
-        <div className="hero-content text-center">
+      <div className="flex justify-center items-center min-h-screen bg-base-200" style={{ backgroundColor: colors.Background }}>
+        <div className="text-center">
           <div className="max-w-md">
             <h1 className="text-4xl font-bold inline mb-4" style={{ color: colors.Text, borderBottom: `4px solid ${colors.Accent}`}}>About Me</h1>
             <p className="py-6" style={{ color: colors.Text }}>With a passion for web development and a keen eye for detail, I'm dedicated to creating intuitive, functional, and visually appealing applications.</p>

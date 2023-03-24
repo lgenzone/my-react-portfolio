@@ -13,7 +13,7 @@ const colors = {
 const Footer = () => {
   return (
     <div>
-      <footer className="footer items-center p-4 bg-neutral text-neutral-content" style={{ backgroundColor: colors.Accent }}>
+      <footer className="footer items-center p-4 bg-neutral text-neutral-content">
         <div className="items-center grid-flow-col">
           <svg
             width="36"

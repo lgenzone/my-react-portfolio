@@ -23,10 +23,10 @@ const Home = () => {
     >
       {/* container */}
       <div
-        className="hero min-h-screen bg-base-200"
+        className="flex justify-center items-center min-h-screen bg-base-200"
         style={{ backgroundColor: colors.Background }}
       >
-        <div className="hero-content flex-col lg:flex-row">
+        <div className="flex justify-center items-center flex-col lg:flex-row">
           <img src={Avatar} className="max-w-sm rounded-lg shadow-2xl" />
           <div>
             <p className="font-bold" style={{ color: colors.Text }}>
