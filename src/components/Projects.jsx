@@ -1,11 +1,9 @@
-
 import React from 'react'
-import bringPopcorn from '../assets/bringPopcorn.png'
+import bringPopcorn from '../assets/BringPopcorn.png'
 import getFit from '../assets/getFit.png'
 import Placeholder from '../assets/placeholder_image.png'
 import codeQuiz from '../assets/codeQuiz.png'
-import readmeGenerator from '../assets/readmeGenerator.png'
-import employeeTracker from '../assets/employeeTracker.png'
+import fiveDayForecast from '../assets/weatherDashboard.png'
 import teamProfileGen from '../assets/teamProfileGen.png'
 
 const colors = {
@@ -18,12 +16,12 @@ const Projects = () => {
   return (
     <div
       name="projects"
-      className="flex items-center justify-center min-h-screen"
+      className="flex items-center p-4 justify-center min-h-screen"
       style={{
         backgroundColor: colors.Background,
         color: colors.Text,
         margin: "auto",
-        textAlign: "center",
+        textAlign: "center"
       }}
     >
       <div className="max-w-full mx-auto p-4 flex flex-col w-full h-full justify-center items-center">
@@ -42,28 +40,30 @@ const Projects = () => {
         {/* container */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* grid item */}
+         
           <div
             className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${bringPopcorn})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold flex justify-center items-center text-white tracking-wider h-full">
-                Bring Popcorn!
+              <span className="flex justify-center items-center text-white tracking-wider h-full">
+              Bring Popcorn uses third-party APIs to provide movie-related data in one place, reducing the need for multiple apps.
               </span>
-              <div className="pt-8 text-center">
+              <div className="pt-2 text-center">
                 <a href="https://nbadraun.github.io/Bring-Popcorn/">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Demo
                   </button>
                 </a>
                 <a href="https://github.com/NBADRAUN/Bring-Popcorn">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Github Repo
                   </button>
                 </a>
               </div>
             </div>
           </div>
+          
 
           {/* grid item */}
           <div
@@ -71,17 +71,17 @@ const Projects = () => {
             style={{ backgroundImage: `url(${getFit})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold flex justify-center items-center text-white tracking-wider h-full">
-                GetFit
+              <span className="flex justify-center items-center text-white tracking-wider h-full">
+              GetFit is a fitness app that uses MVC paradigm and various softwares to store and manipulate user exercise data, allowing users achieve their fitness goals.
               </span>
-              <div className="pt-8 text-center">
+              <div className="pt-2 text-center">
                 <a href="/">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Demo
                   </button>
                 </a>
                 <a href="https://github.com/Jelenarog/Workout-planner">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Github Repo
                   </button>
                 </a>
@@ -94,20 +94,20 @@ const Projects = () => {
             style={{ backgroundImage: `url(${Placeholder})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold flex justify-center items-center text-white tracking-wider h-full">
+              <span className="flex justify-center items-center text-white tracking-wider h-full">
                 Project #3
               </span>
               <p>
                 <i>Coming Soon</i>
               </p>
-              <div className="pt-8 text-center">
+              <div className="pt-2 text-center">
                 <a href="/">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Demo
                   </button>
                 </a>
                 <a href="/">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Github Repo
                   </button>
                 </a>
@@ -120,17 +120,17 @@ const Projects = () => {
             style={{ backgroundImage: `url(${codeQuiz})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold flex justify-center items-center text-white tracking-wider h-full">
-                JavaScript Code Quiz
+              <span className="flex justify-center items-center text-white tracking-wider h-full">
+              JavaScript code quiz is a timed quiz that tests your JavaScript knowledge. Wrong answers lead to time penalties. After completing the quiz, enter your initials to save your score to the high scores page.
               </span>
-              <div className="pt-8 text-center">
+              <div className="pt-2 text-center">
                 <a href="https://lgenzone.github.io/code-quiz/">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Demo
                   </button>
                 </a>
                 <a href="https://github.com/lgenzone/code-quiz">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Github Repo
                   </button>
                 </a>
@@ -140,20 +140,20 @@ const Projects = () => {
           {/* grid item */}
           <div
             className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
-            style={{ backgroundImage: `url(${readmeGenerator})` }}
+            style={{ backgroundImage: `url(${fiveDayForecast})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold flex justify-center items-center text-white tracking-wider h-full">
-                README Generator
+              <span className="flex justify-center items-center text-white tracking-wider h-full">
+              The Five Day Forecast is a travel app that displays temperature, humidity, and wind speed for a specified city. It uses a third-party API to retrieve weather data and helps users plan their trips accordingly.
               </span>
-              <div className="pt-8 text-center">
-                <a href="https://lgenzone.github.io/readme-gen/">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+              <div className="pt-2 text-center">
+                <a href="https://lgenzone.github.io/five-day-weather-forecast/">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Demo
                   </button>
                 </a>
-                <a href="https://github.com/lgenzone/readme-gen">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                <a href="https://github.com/lgenzone/five-day-weather-forecast">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Github Repo
                   </button>
                 </a>
@@ -166,17 +166,17 @@ const Projects = () => {
             style={{ backgroundImage: `url(${teamProfileGen})` }}
           >
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold flex justify-center items-center text-white tracking-wider h-full">
-                CMS Employee Tracker
+              <span className="flex justify-center items-center text-white tracking-wider h-full">
+              A command-line program that handles a company's employee database using Node.js, Inquirer, and MySQL.
               </span>
               <div className="pt-8 text-center">
                 <a href="https://drive.google.com/file/d/1p1so7VG4ZV6E7HS4jjOTFIklwaSb0cwK/view">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Demo
                   </button>
                 </a>
                 <a href="https://github.com/lgenzone/team-profile-generator">
-                  <button className="text-center rounder-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+                  <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Github Repo
                   </button>
                 </a>

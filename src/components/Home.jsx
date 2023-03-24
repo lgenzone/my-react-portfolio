@@ -27,7 +27,10 @@ const Home = () => {
         style={{ backgroundColor: colors.Background }}
       >
         <div className="flex justify-center items-center flex-col lg:flex-row">
-          <img src={Avatar} className="max-w-sm rounded-lg shadow-2xl" />
+        <div className='pr-10'>
+        <img src={Avatar} className="max-w-sm rounded-lg shadow-2xl" />
+        </div>
+          
           <div>
             <p className="font-bold" style={{ color: colors.Text }}>
               Hello! My name is

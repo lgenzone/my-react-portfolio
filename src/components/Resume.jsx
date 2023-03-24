@@ -23,7 +23,7 @@ const Resume = () => {
     { /* container */ }
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div className='flex items-center justify-center py-10'>
-                <p className='text-2xl font-bold inline' style={{ color: colors.Text, borderBottom: `4px solid ${colors.Accent}`}}>Technologies I've worked with</p>
+                <p className='text-4xl font-bold inline' style={{ color: colors.Text, borderBottom: `4px solid ${colors.Accent}`}}>Skills</p>
                 
             </div>
             { /* grid */ }
