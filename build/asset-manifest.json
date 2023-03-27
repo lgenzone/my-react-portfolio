@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c3a1f42e.css",
+    "main.js": "/static/js/main.7dd8971f.js",
+    "static/media/lauren-circle.png": "/static/media/lauren-circle.baa7d98fa3bb2479208b.png",
+    "static/media/BringPopcorn.png": "/static/media/BringPopcorn.dff8aa4bad96a077585e.png",
+    "static/media/getFit.png": "/static/media/getFit.981d993d01e365d2511c.png",
+    "static/media/mysqlicon.png": "/static/media/mysqlicon.493d6f913eca2d2f1258.png",
+    "static/media/nodelogo.png": "/static/media/nodelogo.6927200144848cbdd708.png",
+    "static/media/cssicon.png": "/static/media/cssicon.b1aef972bed1959b8ec2.png",
+    "static/media/html5icon.png": "/static/media/html5icon.e496783a38c2f5e4124a.png",
+    "static/media/weatherDashboard.png": "/static/media/weatherDashboard.897852accd5cd6755340.png",
+    "static/media/teamProfileGen.png": "/static/media/teamProfileGen.124fdae4dc194062682d.png",
+    "static/media/reactlogoWhite.png": "/static/media/reactlogoWhite.c895a08df6d4aedc1d41.png",
+    "static/media/resume-template.pdf": "/static/media/resume-template.90757156e1b1af8780b4.pdf",
+    "static/media/mongodb.png": "/static/media/mongodb.c2c6b702ed393630d0a4.png",
+    "static/media/javascripticon.png": "/static/media/javascripticon.3eb2f002f475427dac16.png",
+    "static/media/codeQuiz.png": "/static/media/codeQuiz.b7178dcdc581728b3b34.png",
+    "index.html": "/index.html",
+    "main.c3a1f42e.css.map": "/static/css/main.c3a1f42e.css.map",
+    "main.7dd8971f.js.map": "/static/js/main.7dd8971f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3a1f42e.css",
+    "static/js/main.7dd8971f.js"
+  ]
+}
