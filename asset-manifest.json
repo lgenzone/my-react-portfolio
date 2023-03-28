@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-react-portfolio/static/css/main.c3a1f42e.css",
-    "main.js": "/my-react-portfolio/static/js/main.4087d5d2.js",
+    "main.css": "/my-react-portfolio/static/css/main.bd1601bd.css",
+    "main.js": "/my-react-portfolio/static/js/main.8e63168d.js",
     "static/media/lauren-circle.png": "/my-react-portfolio/static/media/lauren-circle.baa7d98fa3bb2479208b.png",
     "static/media/BringPopcorn.png": "/my-react-portfolio/static/media/BringPopcorn.dff8aa4bad96a077585e.png",
     "static/media/getFit.png": "/my-react-portfolio/static/media/getFit.981d993d01e365d2511c.png",
@@ -17,11 +17,11 @@
     "static/media/javascripticon.png": "/my-react-portfolio/static/media/javascripticon.3eb2f002f475427dac16.png",
     "static/media/codeQuiz.png": "/my-react-portfolio/static/media/codeQuiz.b7178dcdc581728b3b34.png",
     "index.html": "/my-react-portfolio/index.html",
-    "main.c3a1f42e.css.map": "/my-react-portfolio/static/css/main.c3a1f42e.css.map",
-    "main.4087d5d2.js.map": "/my-react-portfolio/static/js/main.4087d5d2.js.map"
+    "main.bd1601bd.css.map": "/my-react-portfolio/static/css/main.bd1601bd.css.map",
+    "main.8e63168d.js.map": "/my-react-portfolio/static/js/main.8e63168d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3a1f42e.css",
-    "static/js/main.4087d5d2.js"
+    "static/css/main.bd1601bd.css",
+    "static/js/main.8e63168d.js"
   ]
 }
