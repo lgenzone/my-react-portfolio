@@ -1,18 +1,24 @@
-import React from 'react'
-import bringPopcorn from '../assets/BringPopcorn.png'
-import getFit from '../assets/getFit.png'
-import Placeholder from '../assets/placeholder_image.png'
-import codeQuiz from '../assets/codeQuiz.png'
-import fiveDayForecast from '../assets/weatherDashboard.png'
-import teamProfileGen from '../assets/teamProfileGen.png'
+import React, { useState } from 'react';
+import bringPopcorn from '../assets/BringPopcorn.png';
+import getFit from '../assets/getFit.png';
+import Placeholder from '../assets/placeholder_image.png';
+import codeQuiz from '../assets/codeQuiz.png';
+import fiveDayForecast from '../assets/weatherDashboard.png';
+import teamProfileGen from '../assets/teamProfileGen.png';
 
 const colors = {
-    "Background": "#020100",
-    "Text": "#ffffff",
-    "Accent": "#8884ff"
-  };
+  "Background": "#020100",
+  "Text": "#ffffff",
+  "Accent": "#8884ff"
+};
 
 const Projects = () => {
+  const [activeProject, setActiveProject] = useState("");
+
+  const handleProjectClick = (project) => {
+    setActiveProject(project);
+  };
+
   return (
     <div
       name="projects"
@@ -40,14 +46,14 @@ const Projects = () => {
         {/* container */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {/* grid item */}
-         
           <div
-            className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
+            className={`shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div ${activeProject === "bringPopcorn" ? "bg-opacity-100" : "bg-opacity-50"}`}
             style={{ backgroundImage: `url(${bringPopcorn})` }}
+            onClick={() => handleProjectClick("bringPopcorn")}
           >
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className={`opacity-0 group-hover:opacity-100 ${activeProject === "bringPopcorn" ? "opacity-100" : "opacity-0"}`}>
               <span className="flex justify-center items-center text-white tracking-wider h-full">
-              Bring Popcorn uses third-party APIs to provide movie-related data in one place, reducing the need for multiple apps.
+                Bring Popcorn uses third-party APIs to provide movie-related data in one place, reducing the need for multiple apps.
               </span>
               <div className="pt-2 text-center">
                 <a href="https://nbadraun.github.io/Bring-Popcorn/">
@@ -70,7 +76,7 @@ const Projects = () => {
             className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${getFit})` }}
           >
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className={`opacity-0 group-hover:opacity-100 ${activeProject === "getFit" ? "opacity-100" : "opacity-0"}`}>
               <span className="flex justify-center items-center text-white tracking-wider h-full">
               GetFit is a fitness app that uses MVC paradigm and various softwares to store and manipulate user exercise data, allowing users achieve their fitness goals.
               </span>
@@ -93,7 +99,7 @@ const Projects = () => {
             className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${Placeholder})` }}
           >
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className={`opacity-0 group-hover:opacity-100 ${activeProject === "Placeholder" ? "opacity-100" : "opacity-0"}`}>
               <span className="flex justify-center items-center text-white tracking-wider h-full">
                 Project #3
               </span>
@@ -119,7 +125,7 @@ const Projects = () => {
             className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${codeQuiz})` }}
           >
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className={`opacity-0 group-hover:opacity-100 ${activeProject === "codeQuiz" ? "opacity-100" : "opacity-0"}`}>
               <span className="flex justify-center items-center text-white tracking-wider h-full">
               JavaScript code quiz is a timed quiz that tests your JavaScript knowledge. Wrong answers lead to time penalties. After completing the quiz, enter your initials to save your score to the high scores page.
               </span>
@@ -142,7 +148,7 @@ const Projects = () => {
             className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${fiveDayForecast})` }}
           >
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className={`opacity-0 group-hover:opacity-100 ${activeProject === "fiveDayForecast" ? "opacity-100" : "opacity-0"}`}>
               <span className="flex justify-center items-center text-white tracking-wider h-full">
               The Five Day Forecast is a travel app that displays temperature, humidity, and wind speed for a specified city. It uses a third-party API to retrieve weather data and helps users plan their trips accordingly.
               </span>
@@ -165,7 +171,7 @@ const Projects = () => {
             className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
             style={{ backgroundImage: `url(${teamProfileGen})` }}
           >
-            <div className="opacity-0 group-hover:opacity-100">
+            <div className={`opacity-0 group-hover:opacity-100 ${activeProject === "teamProfileGen" ? "opacity-100" : "opacity-0"}`}>
               <span className="flex justify-center items-center text-white tracking-wider h-full">
               A command-line program that handles a company's employee database using Node.js, Inquirer, and MySQL.
               </span>

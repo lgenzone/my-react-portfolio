@@ -6,7 +6,11 @@ const colors = {
   Accent: "#8884ff",
 };
 
-const About = () => {
+const About = ({ onNavigationClick }) => {
+  const handleProjectsClick = () => {
+    onNavigationClick("Projects");
+  };
+
   return (
     <div>
       <div className="flex justify-center items-center min-h-screen bg-base-200" style={{ backgroundColor: colors.Background }}>
@@ -17,16 +21,16 @@ const About = () => {
             <p className="py-6" style={{ color: colors.Text }}>When I'm not coding, you can find me carving some fresh powder 🏂  or dancing to some funky tunes! 🪩 </p>
             <p className="py-6" style={{ color: colors.Text }}>I'm always looking for new challenges and opportunities to expand my horizons, and I'm eager to see where my journey as a developer takes me next!</p>
             <div className='pt-2 flex justify-center items-center'>
-              <button className="text-white border-2 px-6 py-3 my-2 flex items-center rounded-lg hover:bg-[#8884ff] hover:border-[#8884ff]">
-                <a href='/projects'>Projects</a>
+              <button className="text-white border-2 px-6 py-3 my-2 flex items-center rounded-lg hover:bg-[#8884ff] hover:border-[#8884ff]" onClick={handleProjectsClick}>
+                Projects
               </button>
             </div>
           </div>
+        </div>
       </div>
     </div>
-      
-  </div>
   );
 };
 
 export default About;
+

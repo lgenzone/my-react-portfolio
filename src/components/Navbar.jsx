@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { useLocation } from 'react-router-dom';
 
 const colors = {
   "Background": "#020100",
@@ -8,10 +7,14 @@ const colors = {
   "Accent": "#8884ff"
 };
 
-const Navbar = () => {
+const Navbar = ({ onNavigationClick }) => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const location = useLocation();
+
+  const handlePageClick = (page) => {
+    setNav(false);
+    onNavigationClick(page);
+  };
 
   return (
     <div
@@ -21,19 +24,19 @@ const Navbar = () => {
       {/* menu */}
       <ul className="hidden md:flex">
         <li>
-          <a href='/' style={{ color: location.pathname === '/' ? colors.Accent : colors.Text }}>Home</a>
+          <button onClick={() => handlePageClick('Home')} style={{ color: colors.Text }}>Home</button>
         </li>
         <li>
-          <a href='/about' style={{ color: location.pathname === '/about' ? colors.Accent : colors.Text }}>About</a>
+          <button onClick={() => handlePageClick('About')} style={{ color: colors.Text }}>About</button>
         </li>
         <li>
-          <a href='/projects' style={{ color: location.pathname === '/projects' ? colors.Accent : colors.Text }}>Projects</a>
+          <button onClick={() => handlePageClick('Projects')} style={{ color: colors.Text }}>Projects</button>
         </li>
         <li>
-          <a href='/resume' style={{ color: location.pathname === '/resume' ? colors.Accent : colors.Text }}>Resume</a>
+          <button onClick={() => handlePageClick('Resume')} style={{ color: colors.Text }}>Resume</button>
         </li>
         <li>
-          <a href='/contact' style={{ color: location.pathname === '/contact' ? colors.Accent : colors.Text }}>Contact</a>
+          <button onClick={() => handlePageClick('Contact')} style={{ color: colors.Text }}>Contact</button>
         </li>
       </ul>
 
@@ -47,19 +50,19 @@ const Navbar = () => {
       <ul
         className={`fixed top-0 left-0 w-full h-screen flex flex-col justify-center items-center ${!nav ? "hidden" : ""}`} style={{backgroundColor: colors.Background, zIndex: "20"}}>
         <li className="py-6 text-4xl">
-          <a href='/' style={{ color: location.pathname === '/' ? colors.Accent : colors.Text }}>Home</a>
+          <button onClick={() => handlePageClick('Home')} style={{ color: colors.Text }}>Home</button>
         </li>
         <li className="py-6 text-4xl">
-        <a href='/about' style={{ color: location.pathname === '/about' ? colors.Accent : colors.Text }}>About</a>
+          <button onClick={() => handlePageClick('About')} style={{ color: colors.Text }}>About</button>
         </li>
         <li className="py-6 text-4xl">
-          <a href='/projects' style={{ color: location.pathname === '/projects' ? colors.Accent : colors.Text }}>Projects</a>
+          <button onClick={() => handlePageClick('Projects')} style={{ color: colors.Text }}>Projects</button>
         </li>
         <li className="py-6 text-4xl">
-          <a href='/resume' style={{ color: location.pathname === '/resume' ? colors.Accent : colors.Text }}>Resume</a>
+          <button onClick={() => handlePageClick('Resume')} style={{ color: colors.Text }}>Resume</button>
         </li>
         <li className="py-6 text-4xl">
-          <a href='/contact' style={{ color: location.pathname === '/contact' ? colors.Accent : colors.Text }}>Contact</a>
+          <button onClick={() => handlePageClick('Contact')} style={{ color: colors.Text }}>Contact</button>
         </li>
       </ul>
     </div>
@@ -67,4 +70,5 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
 
