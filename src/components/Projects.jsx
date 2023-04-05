@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import bringPopcorn from '../assets/BringPopcorn.png';
+import BringPopcorn from '../assets/bringPopcorn.png';
 import getFit from '../assets/getFit.png';
 import Placeholder from '../assets/placeholder_image.png';
 import codeQuiz from '../assets/codeQuiz.png';
 import fiveDayForecast from '../assets/weatherDashboard.png';
 import teamProfileGen from '../assets/teamProfileGen.png';
+import FarmersMarket from '../assets/farmers-market-mobile.png';
 
 const colors = {
   "Background": "#020100",
@@ -48,10 +49,10 @@ const Projects = () => {
           {/* grid item */}
           <div
             className={`shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div ${activeProject === "bringPopcorn" ? "bg-opacity-100" : "bg-opacity-50"}`}
-            style={{ backgroundImage: `url(${bringPopcorn})` }}
+            style={{ backgroundImage: `url(${BringPopcorn})` }}
             onClick={() => handleProjectClick("bringPopcorn")}
           >
-            <div className={`opacity-0 group-hover:opacity-100 ${activeProject === "bringPopcorn" ? "opacity-100" : "opacity-0"}`}>
+            <div className={`opacity-0 group-hover:opacity-100 ${activeProject === "BringPopcorn" ? "opacity-100" : "opacity-0"}`}>
               <span className="flex justify-center items-center text-white tracking-wider h-full">
                 Bring Popcorn uses third-party APIs to provide movie-related data in one place, reducing the need for multiple apps.
               </span>
@@ -97,22 +98,22 @@ const Projects = () => {
           {/* grid item */}
           <div
             className="group container rounded-md flex justify-center items-center mx-auto bg-cover bg-center content-div"
-            style={{ backgroundImage: `url(${Placeholder})` }}
+            style={{ backgroundImage: `url(${FarmersMarket})` }}
           >
             <div className={`opacity-0 group-hover:opacity-100 ${activeProject === "Placeholder" ? "opacity-100" : "opacity-0"}`}>
               <span className="flex justify-center items-center text-white tracking-wider h-full">
-                Project #3
+                Farmer's Market
               </span>
               <p>
-                <i>Coming Soon</i>
+              A MERN application that connects local producers with consumers who are looking for fresh and high-quality produce and products.
               </p>
               <div className="pt-2 text-center">
-                <a href="/">
+                <a href="/https://farmermarket.herokuapp.com/">
                   <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Demo
                   </button>
                 </a>
-                <a href="/">
+                <a href="/https://github.com/lgenzone/Farmers-Market">
                   <button className="text-center rounded-sm px-4 py-2 m-2 bg-white text-gray-700" style={{borderRadius: "50px"}}>
                     Github Repo
                   </button>
