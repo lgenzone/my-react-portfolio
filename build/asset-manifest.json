@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/my-react-portfolio/static/css/main.bd1601bd.css",
-    "main.js": "/my-react-portfolio/static/js/main.8e63168d.js",
+    "main.js": "/my-react-portfolio/static/js/main.d16eaa9f.js",
     "static/media/lauren-circle.png": "/my-react-portfolio/static/media/lauren-circle.baa7d98fa3bb2479208b.png",
-    "static/media/BringPopcorn.png": "/my-react-portfolio/static/media/BringPopcorn.dff8aa4bad96a077585e.png",
+    "static/media/bringPopcorn.png": "/my-react-portfolio/static/media/bringPopcorn.dff8aa4bad96a077585e.png",
     "static/media/getFit.png": "/my-react-portfolio/static/media/getFit.981d993d01e365d2511c.png",
+    "static/media/farmers-market-mobile.png": "/my-react-portfolio/static/media/farmers-market-mobile.2c4311e82e54bf4077ae.png",
     "static/media/mysqlicon.png": "/my-react-portfolio/static/media/mysqlicon.493d6f913eca2d2f1258.png",
     "static/media/nodelogo.png": "/my-react-portfolio/static/media/nodelogo.6927200144848cbdd708.png",
     "static/media/cssicon.png": "/my-react-portfolio/static/media/cssicon.b1aef972bed1959b8ec2.png",
@@ -18,10 +19,10 @@
     "static/media/codeQuiz.png": "/my-react-portfolio/static/media/codeQuiz.b7178dcdc581728b3b34.png",
     "index.html": "/my-react-portfolio/index.html",
     "main.bd1601bd.css.map": "/my-react-portfolio/static/css/main.bd1601bd.css.map",
-    "main.8e63168d.js.map": "/my-react-portfolio/static/js/main.8e63168d.js.map"
+    "main.d16eaa9f.js.map": "/my-react-portfolio/static/js/main.d16eaa9f.js.map"
   },
   "entrypoints": [
     "static/css/main.bd1601bd.css",
-    "static/js/main.8e63168d.js"
+    "static/js/main.d16eaa9f.js"
   ]
 }
