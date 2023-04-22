@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Avatar from '../assets/lauren-circle.png'
-import About from './About';
+import { HiArrowNarrowRight } from 'react-icons/hi';
+import { Link } from 'react-scroll';
 
 const colors = {
   "Background": "#020100",
@@ -8,13 +9,7 @@ const colors = {
   "Accent": "#8884ff"
 };
 
-const Home = () => {
-  const [currentSection, setCurrentSection] = useState('home');
-
-  const handleButtonClick = () => {
-    setCurrentSection('about');
-  };
- 
+const Home = () => { 
   return (
     <div name="home" className="w-full h-screen" style={{ backgroundColor: colors.Background }}>
       {/* container */}
@@ -23,34 +18,48 @@ const Home = () => {
         style={{ backgroundColor: colors.Background }}
       >
         <div className="flex justify-center items-center flex-col lg:flex-row">
+          {/* avatar */}
           <div className="pr-10">
-            <img src={Avatar} className="max-w-sm rounded-lg shadow-2xl" />
+            <img src={Avatar} alt="Lauren Genzone" className="max-w-sm shadow-2xl" />
           </div>
-
+          {/* text */}
           <div>
-            {currentSection === 'home' ? (
-              <>
+              <div>
                 <p className="font-bold" style={{ color: colors.Text }}>
                   Hello! My name is
                 </p>
                 <h1 className="text-4xl font-bold" style={{ color: colors.Accent }}>
                   Lauren Genzone
                 </h1>
+                
+              <div className='pt-6 text-button-container'>
+
                 <h2 className="text-4xl font-bold" style={{ color: colors.Text }}>
-                  I'm a Full-Stack Developer
+                I'm a Full-Stack Developer
                 </h2>
                 <div className="pt-6">
-                  <button
-                    className="text-white border-2 px-6 py-3 my-2 flex items-center rounded-lg hover:bg-[#8884ff] hover:border-[#8884ff]"
-                    onClick={handleButtonClick}
+                  {/* View Work button */}
+                  <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
                   >
-                    About Me
-                  </button>
+                    <button
+                      className="text-white group border-2 px-6 py-3 my-2 flex items-center rounded-lg hover:bg-[#8884ff] hover:border-[#8884ff]">
+                      View Work
+                      <span className='group-hover:rotate-90 duration-300'>
+                        <HiArrowNarrowRight className='ml-3 ' />
+                      </span>
+                    </button>
+                  </Link>
+
+                  </div>
+
+
                 </div>
-              </>
-            ) : (
-              <About />
-            )}
+              </div>
           </div>
         </div>
       </div>

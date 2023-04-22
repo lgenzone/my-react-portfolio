@@ -8,7 +8,7 @@ import mysqlLogo from '../assets/mysqlicon.png'
 import nodeLogo from '../assets/nodelogo.png'
 import reactLogo from '../assets/reactlogoWhite.png'
 import githubLogo from '../assets/GithubLogowhite.png'
-import myResume from '../assets/resume-template.pdf' 
+import myResume from '../assets/resume2023.pdf' 
 
 
 const colors = {
@@ -70,7 +70,7 @@ const Resume = () => {
                 </div>
             </div>
             <div className='flex items-center justify-center pt-8'>
-                <a className="text-2xl font-bold link link-hover" style={{ color: colors.Accent}} href={myResume}>Download my Resume</a>
+                <a className="text-2xl font-bold link link-hover" style={{ color: colors.Accent}} href={myResume}>Download my Resumé</a>
             </div>
             
         </div>
