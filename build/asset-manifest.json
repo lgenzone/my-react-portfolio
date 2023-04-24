@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-react-portfolio/static/css/main.e3959314.css",
+    "main.js": "/my-react-portfolio/static/js/main.f68382d6.js",
+    "static/media/lauren-circle.png": "/my-react-portfolio/static/media/lauren-circle.baa7d98fa3bb2479208b.png",
+    "static/media/farm-pic.png": "/my-react-portfolio/static/media/farm-pic.4dde9d14ca0fbad3716d.png",
+    "static/media/mysqlicon.png": "/my-react-portfolio/static/media/mysqlicon.493d6f913eca2d2f1258.png",
+    "static/media/fit-girl.png": "/my-react-portfolio/static/media/fit-girl.bd1334210795a1f2898f.png",
+    "static/media/nodelogo.png": "/my-react-portfolio/static/media/nodelogo.6927200144848cbdd708.png",
+    "static/media/cssicon.png": "/my-react-portfolio/static/media/cssicon.b1aef972bed1959b8ec2.png",
+    "static/media/html5icon.png": "/my-react-portfolio/static/media/html5icon.e496783a38c2f5e4124a.png",
+    "static/media/resume2023.pdf": "/my-react-portfolio/static/media/resume2023.2997f7a4fc3f56ee81b1.pdf",
+    "static/media/reactlogoWhite.png": "/my-react-portfolio/static/media/reactlogoWhite.c895a08df6d4aedc1d41.png",
+    "static/media/bring-popcorrn-logo.png": "/my-react-portfolio/static/media/bring-popcorrn-logo.2b30e40e6c32c71ff800.png",
+    "static/media/mongodb.png": "/my-react-portfolio/static/media/mongodb.c2c6b702ed393630d0a4.png",
+    "static/media/javascripticon.png": "/my-react-portfolio/static/media/javascripticon.3eb2f002f475427dac16.png",
+    "index.html": "/my-react-portfolio/index.html",
+    "main.e3959314.css.map": "/my-react-portfolio/static/css/main.e3959314.css.map",
+    "main.f68382d6.js.map": "/my-react-portfolio/static/js/main.f68382d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3959314.css",
+    "static/js/main.f68382d6.js"
+  ]
+}
