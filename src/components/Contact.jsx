@@ -100,7 +100,7 @@ const Contact = () => {
         </div>
 
         <div className="mb-4 pb-4" style={{ color: "white" }}>
-          <p>Connect with my via...</p>
+          <p>Connect with me via...</p>
 
           {/* social icons */}
           
