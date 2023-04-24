@@ -11,7 +11,7 @@ const Footer = () => {
     <div>
     <footer className="footer items-center p-4 bg-neutral text-neutral-content">
       <div className="flex justify-center items-center gap-6">
-        <a className='' href='/'>
+        <a className='' href='https://www.linkedin.com/in/lauren-genzone-b2990a167/'>
           <FaLinkedin size={30}/>
         </a>
         <a className='' href='https://github.com/lgenzone'>

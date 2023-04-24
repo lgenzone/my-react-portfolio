@@ -105,7 +105,7 @@ const Contact = () => {
           {/* social icons */}
           
             <div className="flex justify-center items-center gap-6 mt-4 mb-4">
-              <a className="" href="/">
+              <a className="" href="https://www.linkedin.com/in/lauren-genzone-b2990a167/">
                 <FaLinkedin size={30} />
               </a>
               <a className="" href="https://github.com/lgenzone">
