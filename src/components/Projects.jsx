@@ -26,19 +26,20 @@ return (
 {/* container for projects */}
 <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
         
-        {/* Gird Item */}
+        {/*  */}
         {project.map((item, index) => (
 <div
   key={index}
   style={{ backgroundImage: `url(${item.image})` }}
-  className="shadow-lg shadow-[#040c16] group container rounded-md 
+  className="shadow-lg group container rounded-md 
             flex justify-center text-center items-center mx-auto content-div "
 >
   {/* Hover effect for images */}
   <div className="opacity-0 group-hover:opacity-100">
-    <span className="text-2xl font bold text-white tracking-wider ">
+    <span className="text-2xl font-bold text-white tracking-wider">
       {item.name}
     </span>
+    <p className='text-1xl text-white tracking-wider pt-2 mt-3'>{item.description}</p>
     <div className="pt-8 text-center ">
       {/* eslint-disable-next-line */}
       <a href={item.github} target="_blank">
@@ -60,13 +61,15 @@ return (
       </a>
     </div>
   </div>
+
+
+
 </div>
 ))}
 
-
-</div>
     </div>
   </div>
+</div>
 );
 };
 

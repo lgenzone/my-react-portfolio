@@ -17,7 +17,7 @@ const Footer = () => {
         <a className='' href='https://github.com/lgenzone'>
           <FaGithub size={30}/>
         </a>
-        <a className='' href="mailto: lgenzone@icloud.com">
+        <a className='' href="mailto: lauren.t.genzone@gmail.com">
           <HiOutlineMail size={30}/>
         </a>
         <a className='' href={myResume}>
